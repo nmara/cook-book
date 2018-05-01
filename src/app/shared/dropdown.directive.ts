@@ -4,7 +4,7 @@ import { Directive, HostListener, HostBinding } from '@angular/core';
   selector: '[appDropdown]'
 })
 
-export class AppDropdownDirective implements OnInit {
+export class AppDropdownDirective {
   @HostBinding("class.open") condition = false;
   @HostListener('click') toggleOpen() {
     this.condition = !this.condition;
