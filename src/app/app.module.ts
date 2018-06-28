@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { AppDropdownDirective } from './shared/dropdown.directive';
 // import { RecipeBookService } from './recipe-book/recipe-book.service';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { AppRoutingModule } from './app-routing.module';
+import { RecipeStartComponent } from './recipe-book/recipe-start/recipe-start.component';
 
 
 @NgModule({
@@ -26,11 +28,13 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
     RecipeItemComponent,
     RecipeDetailComponent,
     ShoppingListEditComponent,
-    AppDropdownDirective
+    AppDropdownDirective,
+    RecipeStartComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
